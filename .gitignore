@@ -1,5 +1,5 @@
-# Object file
-*.o
+# Photoshop
+*.psd
 
-# Ada Library Information
-*.ali
+# VSCode
+*.vscode
