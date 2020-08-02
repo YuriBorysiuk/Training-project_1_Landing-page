@@ -16,7 +16,6 @@ li {
 
 .body {
 	font-family: 'PT Serif', serif;
-	/* font-family: 'Roboto', sans-serif; */
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
@@ -142,3 +141,114 @@ li {
 #modal {
 	display: none;
 }
+
+/*=============================
+Slider footer  */
+
+.slider {
+	background-image: url(../img/slider-fon.jpg);
+	background-repeat: no-repeat; /*чтобы вфото не повторялось*/
+	background-size: cover; /*чтобы фото растягивалось*/
+	background-position: center;
+	min-height: 500px; /*если будет переполнение контента, то это свойство не даст растягиваться картинке вместе с текстом*/
+
+}
+
+.slider__item-content {
+	text-align: center;
+	padding-top: 110px;
+	max-width: 665px;
+	margin: 0 auto;
+}
+
+.slider__title {
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 36px;
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	margin-bottom: 22px;
+}
+
+.slider__text {
+	line-height: 24px;
+	font-size: 18px;
+	color: #d3d2d2;
+	font-family: 'PT Serif', serif;
+	margin-bottom: 50px;
+
+}
+
+.default-btn {
+	font-size: 14px;
+	line-height: 24px;
+	color: #fff;
+	font-weight: 500;
+	padding: 8px 30px 8px 24px;
+	border: 1px solid #ffc222;
+	border-right-width: 20px;
+	position: relative;
+	outline: none;
+}
+
+.default-btn:after {
+	content: "\f105";
+	font-family: 'icomoon';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -12px;
+}
+	
+.slider__inner {
+	position: relative;
+}
+
+.slick-btn {
+	position: absolute;
+	top: 70%;
+	z-index: 3;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #fff;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+	background-color: #ffc222;
+}
+
+.slick-btn.slick-disabled {
+	cursor: default;
+	background-color: transparent;
+}
+
+.slick-btn:before{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'icomoon';
+	color: #fff;
+
+}
+
+.slick-next:before {
+	content: "\f105";
+	
+}
+
+.slick-next {
+	right: 0;
+}
+
+.slick-prev:before {
+	content: "\f104";
+}
+
+.slick-prev {
+	left: 0;
+}
+
+
+2^06^05
