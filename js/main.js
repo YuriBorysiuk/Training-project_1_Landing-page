@@ -6,6 +6,6 @@ $(function(){
 		infinite: false //отмена цеклической прокрутки слайдера
 	});
 
-
+	$('select').styler()
 
 });
